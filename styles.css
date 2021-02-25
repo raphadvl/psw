@@ -60,7 +60,7 @@ p.textobv {
     color: green;
 }
 
-table{
+#minhaTabela{
     margin-top: 15px;
     width: 90%;
     text-align: center;
@@ -70,7 +70,15 @@ table{
             border-radius: 25px;
 }
 
-
+/**Cor quando passar por cima**/
+#minhaTabela tr:hover td{
+    background-color: #96f56a;
+  }
+  
+  /**Cor quando selecionado**/
+  #minhaTabela tr.selecionado td{
+    background-color: #aff7ff;
+  }
 
 tbody {
     
@@ -96,14 +104,14 @@ tfoot{
 th{
     padding: 10px;
     text-align: center;
-    
+    cursor: grab;
 }
 td {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ccc;
     word-wrap: break-word;
-
+    cursor:grab;
   }
 
 #imgplus{

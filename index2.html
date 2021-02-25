@@ -8,9 +8,86 @@
 
     </head>
     <body>
-        <br />
-        <div class="container"><p class="text-center" > <img src="logomarca.png" class="img-fluid" width="336px" height="125px"> </p> <br /></div>
-        <div class="container"><p class="textobv"> Seja bem-vindo! Para começar escolha uma dieta ou selecione alimentos/bebida: </p> </div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+            <div class="container">
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Entrar</a></li>
+                      <li><a class="dropdown-item" href="#" aria-disabled="true">Sair</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sobre</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                  <div class="mx-auto order-0">
+                  <a class="navbar-brand mx-auto" href="#">
+                    <img src="logo3.png"  width="128" height="50" >
+                  </a>
+                </div>
+                
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+         
+        </br>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active fixedHeightImg"  data-bs-interval="10000">
+                <img src="dieta1.jpg" class="d-block w-50" style="height:400px; width:400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><b>BEM-VINDO</b></h5>
+                  <p><b>Pratique exercícios físicos e cuide da sua alimentação!</b></p>
+                </div>
+              </div>
+              <div class="carousel-item fixedHeightImg" data-bs-interval="2000">
+                <img src="dieta2.jpg" class="d-block w-50" style="height:400px; width:400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><b>Monte suas refeições e dieta</b></h5>
+                  <p><font color="green"><b>MinhaDieta</b></font></p>
+                </div>
+              </div>
+              <div class="carousel-item fixedHeightImg">
+                <img src="dieta3.jpg" class="d-block w-50" style="height:400px; width:400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><font color="white"><b>Saúde em primeiro lugar!</b></font></h5>
+                  <p><font color="white">Ajudamos você a emagrecer!</font></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <br />
+          <br />
+          <div class="container"><p class="textobv"> Seja bem-vindo! Para começar escolha uma dieta ou selecione alimentos/bebida: </p> </div>
 
         <div class="container" >
             <div class="row">
@@ -18,7 +95,7 @@
                 <div class="col">
                     <span id="fonte1">Dieta</span>
                     <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Dieta..."/></div>
-                    <table >
+                    <table id="minhaTabela" >
                         <thead><tr id="title"><th>Grupo de DIETAS</th></tr></thead>
                         <tbody>
                             <tr><td><b>MONTAR PRATO</b><a href="" ><img id="imgplus" src="maior2.png"></a></td></tr>
@@ -39,7 +116,7 @@
                 <div class="col">
                     <span id="fonte1">Alimentos</span>
                     <div class="input-group"><input type="text" id="txtBusca" placeholder="Buscar Alimento..."/></div>
-                    <table  >
+                    <table id="minhaTabela" >
                         <thead><tr id="title"> <th>Grupo de ALIMENTOS</th></thead>
                         <tbody><tr><td>CARNES E OVOS<a href="" ><img id="imgplus" src="maior2.png"></a></td></tr>
                             <tr><td>CEREAIS<a href="" ><img id="imgplus" src="maior2.png"></a></td></tr>
@@ -60,7 +137,7 @@
                 <div class="col">
                     <span id="fonte1">Bebidas</span>
                     <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Bebida..."/></div>
-                    <table >
+                    <table id="minhaTabela">
                         <thead><tr id="title"> <th>Grupo de BEBIDAS</th></tr></thead>
                         <tbody><tr > <tr><td>CHÁS<a href="" ><img id="imgplus" src="maior2.png"></a></td></tr>
                             <tr><td>LATICÍNIOS<a href="" ><img id="imgplus" src="maior2.png"></a></td></tr>
